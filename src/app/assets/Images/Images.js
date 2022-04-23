@@ -17,6 +17,18 @@ const Images={
     pic16:require("./pic16.jpg"),
     pic17:require("./pic17.jpg"),
     pic18:require("./pic18.jpg"),
+    pic19:require("./pic19.jpg"),
+    pic20:require("./pic20.jpg"),
+    pic21:require("./pic21.jpg"),
+    pic22:require("./pic22.jpg"),
+    pic24:require("./pic24.jpg"),
+    pic25:require("./pic25.jpg"),
+    pic26:require("./pic26.jpg"),
+    pic27:require("./pic27.jpg"),
+    pic28:require("./pic28.jpg"),
+    pic29:require("./pic29.jpg"),
+    pic30:require("./pic30.jpg"),
+    pic31:require("./pic31.jpg"),
 
 }
 export default Images
