@@ -401,12 +401,12 @@ function Home() {
 									alt="load"
 								/>
 								<CardContent>
-									<Box sx={{ display: 'flex' }}>
+									<Box sx={{ display: 'flex',justifyContent:'space-between' }}>
 										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
 											Samsung Galaxy A32
 										</Typography>
-									</Box>
 									<FavoriteBorderOutlined />
+									</Box>
 									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
 										Rs. 42,000
 									</Typography>
@@ -432,12 +432,13 @@ function Home() {
 									alt="load"
 								/>
 								<CardContent>
-									<Box sx={{ display: 'flex' }}>
+									<Box sx={{ display: 'flex' ,justifyContent:'space-between'}}>
 										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
 											Samsung Galaxy A32
 										</Typography>
+										<FavoriteBorderOutlined />
 									</Box>
-									<FavoriteBorderOutlined />
+									
 									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
 										Rs. 42,000
 									</Typography>
@@ -463,12 +464,13 @@ function Home() {
 									alt="load"
 								/>
 								<CardContent>
-									<Box sx={{ display: 'flex' }}>
+									<Box sx={{ display: 'flex' ,justifyContent:'space-between'}}>
 										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
 											Samsung Galaxy A32
 										</Typography>
+										<FavoriteBorderOutlined />
 									</Box>
-									<FavoriteBorderOutlined />
+									
 									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
 										Rs. 42,000
 									</Typography>
@@ -494,12 +496,13 @@ function Home() {
 									alt="load"
 								/>
 								<CardContent>
-									<Box sx={{ display: 'flex' }}>
+									<Box sx={{ display: 'flex' ,justifyContent:'space-between'}}>
 										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
 											Samsung Galaxy A32
 										</Typography>
+										<FavoriteBorderOutlined />
 									</Box>
-									<FavoriteBorderOutlined />
+									
 									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
 										Rs. 42,000
 									</Typography>
@@ -525,12 +528,13 @@ function Home() {
 									alt="load"
 								/>
 								<CardContent>
-									<Box sx={{ display: 'flex' }}>
+									<Box sx={{ display: 'flex',justifyContent:'space-between' }}>
 										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
 											Samsung Galaxy A32
 										</Typography>
+										<FavoriteBorderOutlined />
 									</Box>
-									<FavoriteBorderOutlined />
+									
 									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
 										Rs. 42,000
 									</Typography>
@@ -556,12 +560,13 @@ function Home() {
 									alt="load"
 								/>
 								<CardContent>
-									<Box sx={{ display: 'flex' }}>
+									<Box sx={{ display: 'flex',justifyContent:'space-between' }}>
 										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
 											Samsung Galaxy A32
 										</Typography>
+										<FavoriteBorderOutlined />
 									</Box>
-									<FavoriteBorderOutlined />
+							
 									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
 										Rs. 42,000
 									</Typography>
@@ -587,12 +592,13 @@ function Home() {
 									alt="load"
 								/>
 								<CardContent>
-									<Box sx={{ display: 'flex' }}>
+									<Box sx={{ display: 'flex',justifyContent:'space-between' }}>
 										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
 											Samsung Galaxy A32
 										</Typography>
+										<FavoriteBorderOutlined />
 									</Box>
-									<FavoriteBorderOutlined />
+								
 									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
 										Rs. 42,000
 									</Typography>
@@ -618,12 +624,13 @@ function Home() {
 									alt="load"
 								/>
 								<CardContent>
-									<Box sx={{ display: 'flex' }}>
+									<Box sx={{ display: 'flex' ,justifyContent:'space-between'}}>
 										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
 											Samsung Galaxy A32
 										</Typography>
+										<FavoriteBorderOutlined />
 									</Box>
-									<FavoriteBorderOutlined />
+									
 									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
 										Rs. 42,000
 									</Typography>
@@ -649,12 +656,13 @@ function Home() {
 									alt="load"
 								/>
 								<CardContent>
-									<Box sx={{ display: 'flex' }}>
+									<Box sx={{ display: 'flex',justifyContent:'space-between' }}>
 										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
 											Samsung Galaxy A32
 										</Typography>
+										<FavoriteBorderOutlined />
 									</Box>
-									<FavoriteBorderOutlined />
+									
 									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
 										Rs. 42,000
 									</Typography>
@@ -680,12 +688,13 @@ function Home() {
 									alt="load"
 								/>
 								<CardContent>
-									<Box sx={{ display: 'flex' }}>
+									<Box sx={{ display: 'flex',justifyContent:'space-between' }}>
 										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
 											Samsung Galaxy A32
 										</Typography>
+										<FavoriteBorderOutlined />
 									</Box>
-									<FavoriteBorderOutlined />
+								
 									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
 										Rs. 42,000
 									</Typography>

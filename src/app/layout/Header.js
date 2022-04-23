@@ -34,43 +34,43 @@ function Header() {
 
           <Box sx={{ display: 'flex' }}>
 
-            <MenuItem disableRipple sx={{ display: 'block' }}>
+            <MenuItem disableRipple sx={{ display: 'block','&:hover':{bgcolor:'transparent !important'} }}>
               <NotificationsActiveOutlined sx={{ paddingLeft: 3, color: '#707070', fontSize: "15px" }} />
               <Typography textAlign="center" sx={{ color: '#707070', fontSize: "8px", textAlign: "left" }}>NOTIFICATIONS</Typography>
             </MenuItem>
 
-            <MenuItem disableRipple sx={{ display: 'block', textAlign: "center" }}>
+            <MenuItem disableRipple sx={{ display: 'block','&:hover':{bgcolor:'transparent !important' }}}>
               <SearchOutlined sx={{ color: '#707070', fontSize: "15px" }} />
 
 
               <Typography textAlign="center" sx={{ color: '#707070', fontSize: "8px" }}>SEARCHES</Typography>
             </MenuItem>
 
-            <MenuItem disableRipple sx={{ display: 'block', alignItems: "center" }}>
+            <MenuItem disableRipple sx={{ display: 'block', alignItems: "center" ,'&:hover':{bgcolor:'transparent !important' } }}>
               < FavoriteBorderOutlined sx={{ paddingLeft: 1.8, color: '#707070', fontSize: "15px" }} />
 
 
-              <Typography textAlign="center" sx={{ color: '#707070', fontSize: "8px", textAlign: "center" }}>FAVOURITE</Typography>
+              <Typography textAlign="center" sx={{ color: '#707070', fontSize: "8px", textAlign: "center" ,}}>FAVOURITE</Typography>
             </MenuItem>
 
-            <MenuItem disableRipple sx={{ display: 'block', alignItems: "center" }}>
+            <MenuItem disableRipple sx={{ display: 'block', alignItems: "center",'&:hover':{bgcolor:'transparent !important' } }}>
               <ChatOutlined sx={{ color: '#707070', fontSize: "15px" }} />
               <Typography textAlign="center" sx={{ color: '#707070', fontSize: "8px" }}>CHAT</Typography>
             </MenuItem>
 
-            <MenuItem disableRipple sx={{ display: 'block', alignItems: "center" }}>
+            <MenuItem disableRipple sx={{ display: 'block', alignItems: "center",'&:hover':{bgcolor:'transparent !important' } }}>
               <Typography sx={{ color: '#707070', fontWeight: 700, fontSize: "14px", paddingTop: 1.3 }}>
                 Sign in
               </Typography>
             </MenuItem>
 
-            <MenuItem disableRipple sx={{ display: 'block', alignItems: "center" }}>
+            <MenuItem disableRipple sx={{ display: 'block', alignItems: "center",'&:hover':{bgcolor:'transparent !important' } }}>
               <Typography sx={{ color: '#707070', fontSize: "14px", fontWeight: 700, paddingTop: 1.3 }}>
                 Sign up
               </Typography>
             </MenuItem>
 
-            <MenuItem disableRipple sx={{ display: 'block', alignItems: "center", paddingTop: 1.5 }}>
+            <MenuItem disableRipple sx={{ display: 'block', alignItems: "center", paddingTop: 1.5,'&:hover':{bgcolor:'transparent !important' } }}>
               <Button variant="contained" startIcon={<Add />} sx={{ fontSize: "12px", backgroundColor: "#3B5998", borderRadius: "12%" }}>
                 Sell
               </Button>
