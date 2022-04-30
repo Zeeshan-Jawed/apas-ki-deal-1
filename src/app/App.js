@@ -1,18 +1,17 @@
 import React from 'react';
-
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Footer from './views/Footer';
 
 import Home from './views/Home/Home';
-
+import Form from './components/Categories/Form/Form';
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home />} />
 
-       
+      <Routes>
+        
+        <Route path='/' element={<Home />} />
+        <Route path='/form' element={<Form />} />
 
       </Routes>
 

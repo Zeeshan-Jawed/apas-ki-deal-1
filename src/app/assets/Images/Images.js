@@ -29,6 +29,10 @@ const Images={
     pic29:require("./pic29.jpg"),
     pic30:require("./pic30.jpg"),
     pic31:require("./pic31.jpg"),
+    logoLarge:require("./logo-large.jpg"),
+    facebook:require("./facebook.png"),
+    email:require("./email.png"),
+    google:require("./google.png"),
 
 }
 export default Images

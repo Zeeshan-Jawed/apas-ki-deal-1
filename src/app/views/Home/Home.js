@@ -23,9 +23,41 @@ import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import SmartToyIcon from '@mui/icons-material/SmartToy';
 import PetsIcon from '@mui/icons-material/Pets';
+import SimpleCard from '../../components/Card/SImpleCard';
+import Categories from '../../components/Categories/Categories';
 function Home() {
+
+	let cardData = [
+		{ image: Images.pic5, name: "Samsung Galaxy A32", price: '123', address: 'ALI TOWN, LAHORE', date: "26 MARCH" },
+		{ image: Images.pic6, name: "Samsung Galaxy A32", price: '123', address: 'ALI TOWN, LAHORE', date: "26 MARCH" },
+		{ image: Images.pic7, name: "Samsung Galaxy A32", price: '123', address: 'ALI TOWN, LAHORE', date: "26 MARCH" },
+		{ image: Images.pic8, name: "Samsung Galaxy A32", price: '123', address: 'ALI TOWN, LAHORE', date: "26 MARCH" },
+		{ image: Images.pic9, name: "Samsung Galaxy A32", price: '123', address: 'ALI TOWN, LAHORE', date: "26 MARCH" },
+		{ image: Images.pic10, name: "Samsung Galaxy A32", price: '123', address: 'ALI TOWN, LAHORE', date: "26 MARCH" },
+		{ image: Images.pic11, name: "Samsung Galaxy A32", price: '123', address: 'ALI TOWN, LAHORE', date: "26 MARCH" },
+		{ image: Images.pic12, name: "Samsung Galaxy A32", price: '123', address: 'ALI TOWN, LAHORE', date: "26 MARCH" },
+		{ image: Images.pic13, name: "Samsung Galaxy A32", price: '123', address: 'ALI TOWN, LAHORE', date: "26 MARCH" },
+		{ image: Images.pic14, name: "Samsung Galaxy A32", price: '123', address: 'ALI TOWN, LAHORE', date: "26 MARCH" },
+
+	]
+	let popularCategories=[
+		{ image: Images.pic19, name: 'Vehicles'},
+		{ image: Images.pic20, name: 'Property'},
+		{ image: Images.pic21, name: 'Bikes'},
+		{ image: Images.pic22, name: 'Fashion'},
+		{ image: Images.pic24, name: 'Jobs'},
+		{ image: Images.pic25, name: 'Mobiles'},
+		{ image: Images.pic26, name: 'Electronics'},
+		{ image: Images.pic27, name: 'Furniture'},
+		{ image: Images.pic28, name: 'Services'},
+		{ image: Images.pic29, name: 'Books, Sports'},
+		{ image: Images.pic30, name: 'Kids'},
+		{ image: Images.pic31, name: 'Animals'},
+	]
+
 	return (
 		<Layout>
+
 			<Divider />
 			<Box p={2} sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
 				<Typography sx={{
@@ -185,538 +217,18 @@ function Home() {
 				<Typography variant='h5' sx={{ color: "#484848", fontSize: "23px", letterSpacing: "0.57px", paddingY: 4 }}>
 					<strong>Popular Categories</strong>
 				</Typography>
+				<Categories data={popularCategories}/>
 			</Box>
-			<Box>
-				<Grid container spacing={3} >
+		
 
-					<Grid item xs={1.82} sx={{ marginLeft: 1.8 }}>
-						<Box sx={{ px: '18px', py: '24px', bgcolor: "#FFFFFF",boxShadow: '0px 2px 8px #CFCFCF1C',borderRadius:2}}>
-							<Box sx={{ display: 'flex', borderRadius: '70% 40% 30% 80% / 55% 45% 60% 50%', width: "80px", height: "80px", bgcolor: "#F6F6F6", mx: 'auto', mb: 1 }}>
-								<CardMedia
-									component="img"
-									height="25px"
-									sx={{ width: "31px !important", m: 'auto' }}
-									image={Images.pic19}
-									alt="camera"
-								/>
-							</Box>
-							<Typography sx={{ color: '#484848', fontSize: "18px", textAlign: "center" }}>
-								Vehicles
-							</Typography>
-						</Box>
-					</Grid>
-
-
-					<Grid item xs={1.82} sx={{ marginLeft: 1.8 }}>
-					<Box sx={{ px: '18px', py: '24px', bgcolor: "#FFFFFF",boxShadow: '0px 2px 8px #CFCFCF1C',borderRadius:2}}>
-							<Box sx={{ display: 'flex', borderRadius: '70% 40% 30% 80% / 55% 45% 60% 50%', width: "80px", height: "80px", bgcolor: "#F6F6F6", mx: 'auto', mb: 1 }}>
-								<CardMedia
-									component="img"
-									height="25px"
-									sx={{ width: "31px !important", m: 'auto' }}
-									image={Images.pic20}
-									alt="camera"
-								/>
-							</Box>
-							<Typography sx={{ color: '#484848', fontSize: "18px", textAlign: "center" }}>
-								Property
-							</Typography>
-						</Box>
-					</Grid>
-					<Grid item xs={1.82} sx={{ marginLeft: 1.8 }}>
-					<Box sx={{ px: '18px', py: '24px', bgcolor: "#FFFFFF",boxShadow: '0px 2px 8px #CFCFCF1C',borderRadius:2}}>
-							<Box sx={{ display: 'flex', borderRadius: '70% 40% 30% 80% / 55% 45% 60% 50%', width: "80px", height: "80px", bgcolor: "#F6F6F6", mx: 'auto', mb: 1 }}>
-								<CardMedia
-									component="img"
-									height="25px"
-									sx={{ width: "31px !important", m: 'auto' }}
-									image={Images.pic21}
-									alt="camera"
-								/>
-							</Box>
-							<Typography sx={{ color: '#484848', fontSize: "18px", textAlign: "center" }}>
-								Bikes
-							</Typography>
-						</Box>
-					</Grid>
-					<Grid item xs={1.82} sx={{ marginLeft: 1.8 }}>
-					<Box sx={{ px: '18px', py: '24px', bgcolor: "#FFFFFF",boxShadow: '0px 2px 8px #CFCFCF1C',borderRadius:2}}>
-							<Box sx={{ display: 'flex', borderRadius: '70% 40% 30% 80% / 55% 45% 60% 50%', width: "80px", height: "80px", bgcolor: "#F6F6F6", mx: 'auto', mb: 1 }}>
-								<CardMedia
-									component="img"
-									height="25px"
-									sx={{ width: "31px !important", m: 'auto' }}
-									image={Images.pic22}
-									alt="camera"
-								/>
-							</Box>
-							<Typography sx={{ color: '#484848', fontSize: "18px", textAlign: "center" }}>
-								Fashion&Beauty
-							</Typography>
-							</Box>
-					</Grid>
-					<Grid item xs={1.82} sx={{ marginLeft: 1.8 }}>
-					<Box sx={{ px: '18px', py: '24px', bgcolor: "#FFFFFF",boxShadow: '0px 2px 8px #CFCFCF1C',borderRadius:2}}>
-							<Box sx={{ display: 'flex', borderRadius: '70% 40% 30% 80% / 55% 45% 60% 50%', width: "80px", height: "80px", bgcolor: "#F6F6F6", mx: 'auto', mb: 1 }}>
-								<CardMedia
-									component="img"
-									height="25px"
-									sx={{ width: "31px !important", m: 'auto' }}
-									image={Images.pic24}
-									alt="camera"
-								/>
-							</Box>
-							<Typography sx={{ color: '#484848', fontSize: "18px", textAlign: "center" }}>
-								Jobs
-							</Typography>
-						</Box>
-					</Grid>
-					<Grid item xs={1.82} sx={{ marginLeft: 1.8 }}>
-					<Box sx={{ px: '18px', py: '24px', bgcolor: "#FFFFFF",boxShadow: '0px 2px 8px #CFCFCF1C',borderRadius:2}}>
-							<Box sx={{ display: 'flex', borderRadius: '70% 40% 30% 80% / 55% 45% 60% 50%', width: "80px", height: "80px", bgcolor: "#F6F6F6", mx: 'auto', mb: 1 }}>
-								<CardMedia
-									component="img"
-									height="25px"
-									sx={{ width: "31px !important", m: 'auto' }}
-									image={Images.pic25}
-									alt="camera"
-								/>
-							</Box>
-							<Typography sx={{ color: '#484848', fontSize: "18px", textAlign: "center" }}>
-								Mobiles
-							</Typography>
-						</Box>
-					</Grid>
-					<Grid item xs={1.82} sx={{ marginLeft: 1.8 }}>
-					<Box sx={{ px: '18px', py: '24px', bgcolor: "#FFFFFF",boxShadow: '0px 2px 8px #CFCFCF1C',borderRadius:2}}>
-							<Box sx={{ display: 'flex', borderRadius: '70% 40% 30% 80% / 55% 45% 60% 50%', width: "80px", height: "80px", bgcolor: "#F6F6F6", mx: 'auto', mb: 1 }}>
-								<CardMedia
-									component="img"
-									height="25px"
-									sx={{ width: "31px !important", m: 'auto' }}
-									image={Images.pic26}
-									alt="camera"
-								/>
-							</Box>
-							<Typography sx={{ color: '#484848', fontSize: "18px", textAlign: "center" }}>
-								Electronics
-							</Typography>
-						</Box>
-					</Grid>
-					<Grid item xs={1.82} sx={{ marginLeft: 1.8 }}>
-					<Box sx={{ px: '18px', py: '24px', bgcolor: "#FFFFFF",boxShadow: '0px 2px 8px #CFCFCF1C',borderRadius:2}}>
-							<Box sx={{ display: 'flex', borderRadius: '70% 40% 30% 80% / 55% 45% 60% 50%', width: "80px", height: "80px", bgcolor: "#F6F6F6", mx: 'auto', mb: 1 }}>
-								<CardMedia
-									component="img"
-									height="25px"
-									sx={{ width: "31px !important", m: 'auto' }}
-									image={Images.pic27}
-									alt="camera"
-								/>
-							</Box>
-							<Typography sx={{ color: '#484848', fontSize: "18px", textAlign: "center" }}>
-								Furniture
-							</Typography>
-						</Box>
-					</Grid>
-					<Grid item xs={1.82} sx={{ marginLeft: 1.8 }}>
-					<Box sx={{ px: '18px', py: '24px', bgcolor: "#FFFFFF",boxShadow: '0px 2px 8px #CFCFCF1C',borderRadius:2}}>
-							<Box sx={{ display: 'flex', borderRadius: '70% 40% 30% 80% / 55% 45% 60% 50%', width: "80px", height: "80px", bgcolor: "#F6F6F6", mx: 'auto', mb: 1 }}>
-								<CardMedia
-									component="img"
-									height="25px"
-									sx={{ width: "31px !important", m: 'auto' }}
-									image={Images.pic28}
-									alt="camera"
-								/>
-							</Box>
-							<Typography sx={{ color: '#484848', fontSize: "18px", textAlign: "center" }}>
-								Services
-							</Typography>
-						</Box>
-					</Grid>
-					<Grid item xs={1.82} sx={{ marginLeft: 1.8 }}>
-					<Box sx={{ px: '18px', py: '24px', bgcolor: "#FFFFFF",boxShadow: '0px 2px 8px #CFCFCF1C',borderRadius:2}}>
-							<Box sx={{ display: 'flex', borderRadius: '70% 40% 30% 80% / 55% 45% 60% 50%', width: "80px", height: "80px", bgcolor: "#F6F6F6", mx: 'auto', mb: 1 }}>
-								<CardMedia
-									component="img"
-									height="25px"
-									sx={{ width: "31px !important", m: 'auto' }}
-									image={Images.pic29}
-									alt="camera"
-								/>
-							</Box>
-							<Typography sx={{ color: '#484848', fontSize: "18px", textAlign: "center" }}>
-								Books
-							</Typography>
-						</Box>
-					</Grid>
-					<Grid item xs={1.82} sx={{ marginLeft: 1.8 }}>
-					<Box sx={{ px: '18px', py: '24px', bgcolor: "#FFFFFF",boxShadow: '0px 2px 8px #CFCFCF1C',borderRadius:2}}>
-							<Box sx={{ display: 'flex', borderRadius: '70% 40% 30% 80% / 55% 45% 60% 50%', width: "80px", height: "80px", bgcolor: "#F6F6F6", mx: 'auto', mb: 1 }}>
-								<CardMedia
-									component="img"
-									height="25px"
-									sx={{ width: "31px !important", m: 'auto' }}
-									image={Images.pic30}
-									alt="camera"
-								/>
-							</Box>
-							<Typography sx={{ color: '#484848', fontSize: "18px", textAlign: "center" }}>
-								Kids
-							</Typography>
-						</Box>
-					</Grid>
-					<Grid item xs={1.82} sx={{ marginLeft: 1.8 }}>
-					<Box sx={{ px: '18px', py: '24px', bgcolor: "#FFFFFF",boxShadow: '0px 2px 8px #CFCFCF1C',borderRadius:2}}>
-							<Box sx={{ display: 'flex', borderRadius: '70% 40% 30% 80% / 55% 45% 60% 50%', width: "80px", height: "80px", bgcolor: "#F6F6F6", mx: 'auto', mb: 1 }}>
-								<CardMedia
-									component="img"
-									height="25px"
-									sx={{ width: "31px !important", m: 'auto' }}
-									image={Images.pic31}
-									alt="camera"
-								/>
-							</Box>
-							<Typography sx={{ color: '#484848', fontSize: "18px", textAlign: "center" }}>
-								Animals
-							</Typography>
-						</Box>
-					</Grid>
-				</Grid>
-			</Box>
 			<Box p={1}>
 				<Typography variant='h5' p={0.5} sx={{ color: "#484848", letterSpacing: "0.57px", fontWeight: "90%", fontSize: "23px", fontFamily: "sans-serif", paddingY: 4 }}>
 					<strong>Latest Ads</strong>
 				</Typography>
-				<Box>
-					<Grid container spacing={2}  >
-						<Grid item xs={2.4}>
-							<Card sx={{ maxWidth: 345 }}>
-								<CardMedia
-									component="img"
-									height="40%"
-									sx={{ width: "220px !important" }}
-									image={Images.pic5}
-									alt="load"
-								/>
-								<CardContent>
-									<Box sx={{ display: 'flex',justifyContent:'space-between' }}>
-										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
-											Samsung Galaxy A32
-										</Typography>
-									<FavoriteBorderOutlined />
-									</Box>
-									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
-										Rs. 42,000
-									</Typography>
-									<Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2 }}>
-											ALI TOWN, LAHORE
-										</Typography>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2, textAlign: "right" }}>
-											26 MARCH
-										</Typography>
-									</Box>
-								</CardContent>
-
-							</Card>
-						</Grid>
-						<Grid item xs={2.4}>
-							<Card sx={{ maxWidth: 345 }}>
-								<CardMedia
-									component="img"
-									height="40%"
-									sx={{ width: "220px !important" }}
-									image={Images.pic6}
-									alt="load"
-								/>
-								<CardContent>
-									<Box sx={{ display: 'flex' ,justifyContent:'space-between'}}>
-										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
-											Samsung Galaxy A32
-										</Typography>
-										<FavoriteBorderOutlined />
-									</Box>
-									
-									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
-										Rs. 42,000
-									</Typography>
-									<Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2 }}>
-											ALI TOWN, LAHORE
-										</Typography>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2, textAlign: "right" }}>
-											26 MARCH
-										</Typography>
-									</Box>
-								</CardContent>
-
-							</Card>
-						</Grid>
-						<Grid item xs={2.4}>
-							<Card sx={{ maxWidth: 345 }}>
-								<CardMedia
-									component="img"
-									height="40%"
-									sx={{ width: "220px !important" }}
-									image={Images.pic7}
-									alt="load"
-								/>
-								<CardContent>
-									<Box sx={{ display: 'flex' ,justifyContent:'space-between'}}>
-										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
-											Samsung Galaxy A32
-										</Typography>
-										<FavoriteBorderOutlined />
-									</Box>
-									
-									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
-										Rs. 42,000
-									</Typography>
-									<Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2 }}>
-											ALI TOWN, LAHORE
-										</Typography>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2, textAlign: "right" }}>
-											26 MARCH
-										</Typography>
-									</Box>
-								</CardContent>
-
-							</Card>
-						</Grid>
-						<Grid item xs={2.4}>
-							<Card sx={{ maxWidth: 345 }}>
-								<CardMedia
-									component="img"
-									height="40%"
-									sx={{ width: "220px !important" }}
-									image={Images.pic8}
-									alt="load"
-								/>
-								<CardContent>
-									<Box sx={{ display: 'flex' ,justifyContent:'space-between'}}>
-										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
-											Samsung Galaxy A32
-										</Typography>
-										<FavoriteBorderOutlined />
-									</Box>
-									
-									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
-										Rs. 42,000
-									</Typography>
-									<Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2 }}>
-											ALI TOWN, LAHORE
-										</Typography>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2, textAlign: "right" }}>
-											26 MARCH
-										</Typography>
-									</Box>
-								</CardContent>
-
-							</Card>
-						</Grid>
-						<Grid item xs={2.4}>
-							<Card sx={{ maxWidth: 345 }}>
-								<CardMedia
-									component="img"
-									height="40%"
-									sx={{ width: "220px !important" }}
-									image={Images.pic9}
-									alt="load"
-								/>
-								<CardContent>
-									<Box sx={{ display: 'flex',justifyContent:'space-between' }}>
-										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
-											Samsung Galaxy A32
-										</Typography>
-										<FavoriteBorderOutlined />
-									</Box>
-									
-									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
-										Rs. 42,000
-									</Typography>
-									<Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2 }}>
-											ALI TOWN, LAHORE
-										</Typography>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2, textAlign: "right" }}>
-											26 MARCH
-										</Typography>
-									</Box>
-								</CardContent>
-
-							</Card>
-						</Grid>
-						<Grid item xs={2.4}>
-							<Card sx={{ maxWidth: 345 }}>
-								<CardMedia
-									component="img"
-									height="40%"
-									sx={{ width: "220px !important" }}
-									image={Images.pic10}
-									alt="load"
-								/>
-								<CardContent>
-									<Box sx={{ display: 'flex',justifyContent:'space-between' }}>
-										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
-											Samsung Galaxy A32
-										</Typography>
-										<FavoriteBorderOutlined />
-									</Box>
-							
-									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
-										Rs. 42,000
-									</Typography>
-									<Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2 }}>
-											ALI TOWN, LAHORE
-										</Typography>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2, textAlign: "right" }}>
-											26 MARCH
-										</Typography>
-									</Box>
-								</CardContent>
-
-							</Card>
-						</Grid>
-						<Grid item xs={2.4}>
-							<Card sx={{ maxWidth: 345 }}>
-								<CardMedia
-									component="img"
-									height="40%"
-									sx={{ width: "220px !important" }}
-									image={Images.pic11}
-									alt="load"
-								/>
-								<CardContent>
-									<Box sx={{ display: 'flex',justifyContent:'space-between' }}>
-										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
-											Samsung Galaxy A32
-										</Typography>
-										<FavoriteBorderOutlined />
-									</Box>
-								
-									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
-										Rs. 42,000
-									</Typography>
-									<Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2 }}>
-											ALI TOWN, LAHORE
-										</Typography>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2, textAlign: "right" }}>
-											26 MARCH
-										</Typography>
-									</Box>
-								</CardContent>
-
-							</Card>
-						</Grid>
-						<Grid item xs={2.4}>
-							<Card sx={{ maxWidth: 345 }}>
-								<CardMedia
-									component="img"
-									height="40%"
-									sx={{ width: "220px !important" }}
-									image={Images.pic12}
-									alt="load"
-								/>
-								<CardContent>
-									<Box sx={{ display: 'flex' ,justifyContent:'space-between'}}>
-										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
-											Samsung Galaxy A32
-										</Typography>
-										<FavoriteBorderOutlined />
-									</Box>
-									
-									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
-										Rs. 42,000
-									</Typography>
-									<Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2 }}>
-											ALI TOWN, LAHORE
-										</Typography>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2, textAlign: "right" }}>
-											26 MARCH
-										</Typography>
-									</Box>
-								</CardContent>
-
-							</Card>
-						</Grid>
-						<Grid item xs={2.4}>
-							<Card sx={{ maxWidth: 345 }}>
-								<CardMedia
-									component="img"
-									height="40%"
-									sx={{ width: "220px !important" }}
-									image={Images.pic13}
-									alt="load"
-								/>
-								<CardContent>
-									<Box sx={{ display: 'flex',justifyContent:'space-between' }}>
-										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
-											Samsung Galaxy A32
-										</Typography>
-										<FavoriteBorderOutlined />
-									</Box>
-									
-									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
-										Rs. 42,000
-									</Typography>
-									<Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2 }}>
-											ALI TOWN, LAHORE
-										</Typography>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2, textAlign: "right" }}>
-											26 MARCH
-										</Typography>
-									</Box>
-								</CardContent>
-
-							</Card>
-						</Grid>
-						<Grid item xs={2.4}>
-							<Card sx={{ maxWidth: 345 }}>
-								<CardMedia
-									component="img"
-									height="40%"
-									sx={{ width: "220px !important" }}
-									image={Images.pic14}
-									alt="load"
-								/>
-								<CardContent>
-									<Box sx={{ display: 'flex',justifyContent:'space-between' }}>
-										<Typography variant="body2" component="div" sx={{ color: "#484848", fontSize: "14px" }}>
-											Samsung Galaxy A32
-										</Typography>
-										<FavoriteBorderOutlined />
-									</Box>
-								
-									<Typography variant="body2" sx={{ color: "#484848", fontWeight: 700, fontSize: "16px" }}>
-										Rs. 42,000
-									</Typography>
-									<Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2 }}>
-											ALI TOWN, LAHORE
-										</Typography>
-										<Typography variant="body2" sx={{ color: "#898B8F", fontWeight: 700, fontSize: "8px", paddingTop: 2, textAlign: "right" }}>
-											26 MARCH
-										</Typography>
-									</Box>
-								</CardContent>
-
-							</Card>
-						</Grid>
-
-
-					</Grid>
-				</Box>
-
+				<SimpleCard data={cardData} />
 			</Box>
 
+		
 
 
 
