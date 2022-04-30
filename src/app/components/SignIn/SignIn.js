@@ -54,7 +54,14 @@ const SignIn = ({ openDialog, onClose }) => {
       }
 
     } catch (error) {
-      console.log(error)
+      toast.error("Something Wrong", {
+        position: "bottom-left",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true
+      });
     }
   };
 
@@ -89,7 +96,7 @@ const SignIn = ({ openDialog, onClose }) => {
           <DialogContentText id="alert-dialog-slide-description">
             <Box sx={{ '& > :not(style)': { m: 1 } }}>
               <form onSubmit={handleSubmit(submitForm)}>
-                <Box sx={{ py: 1, display: 'flex', alignItems: 'flex-end', bgcolor: 'white', borderRadius: '12px' }}>
+                <Box sx={{my:2, py: 1, display: 'flex', alignItems: 'flex-end', bgcolor: 'white', borderRadius: '12px' }}>
                   <PhoneIcon sx={{ color: 'action.active', m: 1, my: 0.5 }} />
                   <TextField size="medium" fullWidth name="phoneno" placeholder="Phone Number" variant="standard"
                     {...register("phoneno", {
@@ -103,7 +110,7 @@ const SignIn = ({ openDialog, onClose }) => {
                     required />
                 </Box>
                 {errors.phoneno && <span role="alert" style={{ color: 'red' }}>{errors.phoneno.message}</span>}
-                <Box sx={{ py: 1, display: 'flex', alignItems: 'flex-end', bgcolor: 'white', borderRadius: '12px' }}>
+                <Box sx={{my:2, py: 1, display: 'flex', alignItems: 'flex-end', bgcolor: 'white', borderRadius: '12px' }}>
                   <HttpsIcon sx={{ color: 'action.active', m: 1, my: 0.5 }} />
                   <FormControl fullWidth>
                     <TextField fullWidth name="password" placeholder="Password" variant="standard" InputProps={{ disableUnderline: true }}
@@ -123,12 +130,12 @@ const SignIn = ({ openDialog, onClose }) => {
                 {errors.password && <span style={{ color: 'red' }} role="alert">{errors.password.message}</span>}
 
 
-                <Button type="submit" variant="contained" sx={{ bgcolor: '#3B5998', px: 3, py: 1, borderRadius: 2, width: '95%' }} >Sign up</Button>
+                <Button type="submit" variant="contained" sx={{ bgcolor: '#3B5998', px: 3, py: 1, borderRadius: 2, width: '95%' }} >SIGN IN</Button>
               </form>
 
             </Box>
           </DialogContentText>
-          <Typography sx={{ fontSize: '14px', textAlign: 'center', mt: 2 }}>Sign Up With</Typography>
+          <Typography sx={{ fontSize: '14px', textAlign: 'center', mt: 2 }}>Sign In With</Typography>
         </DialogContent>
         <Box sx={{ display: 'flex', justifyContent: 'space-around', mb: 3, p: 1 }}>
           <Button sx={{ px: 5, py: 2, bgcolor: 'white', borderRadius: "12px" }} ><img src={Images.google}></img></Button>

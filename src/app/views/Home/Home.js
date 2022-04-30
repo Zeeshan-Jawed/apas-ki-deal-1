@@ -25,6 +25,7 @@ import SmartToyIcon from '@mui/icons-material/SmartToy';
 import PetsIcon from '@mui/icons-material/Pets';
 import SimpleCard from '../../components/Card/SImpleCard';
 import Categories from '../../components/Categories/Categories';
+import { Link } from 'react-router-dom';
 function Home() {
 
 	let cardData = [
@@ -60,12 +61,15 @@ function Home() {
 
 			<Divider />
 			<Box p={2} sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
+				<Link to='/'>
 				<Typography sx={{
 					color: "#484848",
 					fontSize: "17px",
+					
 				}} >
 					Mobile
 				</Typography>
+				</Link>
 				<Typography sx={{
 					color: "#484848",
 					fontSize: "17px",

@@ -1,5 +1,5 @@
 const Images={
-    pic1:require("./logo.jpg"),
+    pic1:require("./logo.png"),
     pic2:require("./bg.png"),
     pic3:require("./bg2.jpg"),
     pic4:require("./pic4.jpg"),
@@ -33,6 +33,8 @@ const Images={
     facebook:require("./facebook.png"),
     email:require("./email.png"),
     google:require("./google.png"),
+    selllogo:require("./Group 2776.png"),
+    mobileicon:require("./mobileicon.png")
 
 }
 export default Images
