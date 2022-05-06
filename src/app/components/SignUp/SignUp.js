@@ -24,6 +24,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 });
 
 const Signup = ({ openDialog, onClose }) => {
+  // const [openOtpDialog, setOpenOtpDialog] = useState(false);
 
   const { register, handleSubmit, watch, formState: { errors } } = useForm({});
   const password = useRef({});
@@ -71,6 +72,7 @@ const Signup = ({ openDialog, onClose }) => {
 
   return (
     <Fragment>
+      {/* <Signup openDialog={openOtpDialog} onClose={() => setOpenOtpDialog(false)} /> */}
       <SignIn openDialog={openSignInDialog} onClose={() => setOpenSignInDialog(false)} />
       <Dialog
         open={openDialog}
@@ -99,7 +101,7 @@ const Signup = ({ openDialog, onClose }) => {
           <DialogContentText id="alert-dialog-slide-description">
             <Box sx={{ '& > :not(style)': { m: 1 } }}>
               <form onSubmit={handleSubmit(submitForm)}>
-                <Box sx={{ my:2,py: 1, display: 'flex', alignItems: 'flex-end', bgcolor: 'white', borderRadius: '12px' }}>
+                <Box sx={{ my: 2, py: 1, display: 'flex', alignItems: 'flex-end', bgcolor: 'white', borderRadius: '12px' }}>
                   <PhoneIcon sx={{ color: 'action.active', m: 1, my: 0.5 }} />
                   <TextField size="medium" fullWidth name="phoneno" placeholder="Phone Number" variant="standard"
                     {...register("phoneno", {
@@ -113,7 +115,7 @@ const Signup = ({ openDialog, onClose }) => {
                     required />
                 </Box>
                 {errors.phoneno && <span role="alert" style={{ color: 'red' }}>{errors.phoneno.message}</span>}
-                <Box sx={{ my:2,py: 1, display: 'flex', alignItems: 'flex-end', bgcolor: 'white', borderRadius: '12px' }}>
+                <Box sx={{ my: 2, py: 1, display: 'flex', alignItems: 'flex-end', bgcolor: 'white', borderRadius: '12px' }}>
                   <HttpsIcon sx={{ color: 'action.active', m: 1, my: 0.5 }} />
                   <FormControl fullWidth>
                     <TextField fullWidth name="password" placeholder="Password" variant="standard" InputProps={{ disableUnderline: true }}
@@ -131,7 +133,7 @@ const Signup = ({ openDialog, onClose }) => {
                   </FormControl>
                 </Box>
                 {errors.password && <span style={{ color: 'red' }} role="alert">{errors.password.message}</span>}
-                <Box sx={{my:2, py: 1, display: 'flex', alignItems: 'flex-end', bgcolor: 'white', borderRadius: '12px' }}>
+                <Box sx={{ my: 2, py: 1, display: 'flex', alignItems: 'flex-end', bgcolor: 'white', borderRadius: '12px' }}>
                   <HttpsIcon sx={{ color: 'action.active', m: 1, my: 0.5 }} />
                   <FormControl fullWidth>
                     <TextField name="confirmPassword" placeholder="Confirm Password" variant="standard" InputProps={{ disableUnderline: true }}
@@ -156,9 +158,7 @@ const Signup = ({ openDialog, onClose }) => {
           </DialogContentText>
           <Typography sx={{ fontSize: '14px', textAlign: 'center', mt: 2 }}>Sign Up With</Typography>
         </DialogContent>
-        <Button onClick={() => setOpenSignInDialog(true)} sx={{ color: '#707070', fontSize: "14px", fontWeight: 700, paddingTop: 1.3 }}>
-                    Sign in
-                  </Button>
+       
         <Box sx={{ display: 'flex', justifyContent: 'space-around', mb: 3, p: 1 }}>
           <Button sx={{ px: 5, py: 2, bgcolor: 'white', borderRadius: "12px" }} ><img src={Images.google}></img></Button>
           <Button sx={{ px: 5, py: 2, bgcolor: 'white', borderRadius: "12px" }}><img src={Images.facebook}></img></Button>

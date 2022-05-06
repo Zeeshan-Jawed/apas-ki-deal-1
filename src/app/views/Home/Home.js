@@ -218,7 +218,7 @@ function Home() {
 
 			</Box>
 			<Box>
-				<Typography variant='h5' sx={{ color: "#484848", fontSize: "23px", letterSpacing: "0.57px", paddingY: 4 }}>
+				<Typography variant='h5' px={1} sx={{ color: "#484848", fontSize: "23px", letterSpacing: "0.57px", paddingY: 4 }}>
 					<strong>Popular Categories</strong>
 				</Typography>
 				<Categories data={popularCategories}/>

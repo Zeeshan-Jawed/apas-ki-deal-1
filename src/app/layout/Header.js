@@ -94,7 +94,7 @@ function Header() {
                   <Avatar alt="" src="/static/images/avatar/1.jpg"
                     sx={{ width: 30, height: 30, bgcolor: '#3B5998' }} />
                   <Typography sx={{ fontSize: '14px', mx: 1, my: 0.5 }}>{user.name} </Typography>
-                  <ArrowDropDownOutlined sx={{ py: 0.7,ml: 2 }} onClick={handleClick}
+                  <ArrowDropDownOutlined sx={{ py: 0.2,ml: 1 }} onClick={handleClick}
                     size="small"
                     
                     aria-controls={open ? 'account-menu' : undefined}
